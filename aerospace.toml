@@ -104,7 +104,7 @@ automatically-unhide-macos-hidden-apps = false
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
     alt-slash = 'layout tiles horizontal vertical'
-    alt-comma = 'layout accordion horizontal vertical'
+    # alt-comma = 'layout accordion horizontal vertical'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
     alt-h = 'focus left'
@@ -143,6 +143,12 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-7 = 'move-node-to-workspace 7'
     alt-shift-8 = 'move-node-to-workspace 8'
     alt-shift-9 = 'move-node-to-workspace 9'
+
+    # Change window between floating and tiling
+    alt-f = 'layout floating tiling'
+
+    # Fullscreen window
+    alt-shift-f = 'fullscreen'
     
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
@@ -171,3 +177,7 @@ automatically-unhide-macos-hidden-apps = false
     down = 'volume down'
     up = 'volume up'
     shift-down = ['volume set 0', 'mode main']
+
+# [[on-window-detected]]
+# if.app-id = 'com.google.Chrome'
+# run = "move-node-to-workspace B"
